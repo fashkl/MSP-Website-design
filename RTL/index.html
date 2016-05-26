@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<!--[if IE 8]>
+<html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]>
+<html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html dir="rtl" lang="en"> <!--<![endif]-->
+
+<!-- Cloned by RabinsXP.com-->
+<head>
+    <title>اﻟﺮﺋﻴﺴﻴﺔ</title>
+
+    <!-- JS Global Compulsory -->
+    <script src="../assets/plugins/jquery/jquery.min.js"></script>
+    <script src="../assets/plugins/jquery/jquery-migrate.min.js"></script>
+    <script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.png">
+    <!--<link rel="shortcut icon" href="favicon.png">-->
+
+    <!-- Web Fonts -->
+    <link rel='stylesheet' type='text/css'
+          href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600&amp;subset=cyrillic,latin'>
+
+    <!-- CSS Global Compulsory -->
+    <link rel="stylesheet" href="../assets/plugins/bootstrap/css/bootstrap-rtl.min.css">
+    <link rel="stylesheet" href="../assets/css/css-rtl/style-rtl.css">
+
+    <!-- CSS Header and Footer -->
+    <link rel="stylesheet" href="../assets/css/css-rtl/headers/header-default-rtl.css">
+    <link rel="stylesheet" href="../assets/css/css-rtl/footers/footer-v1-rtl.css">
+
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" href="../assets/plugins/animate.css">
+    <link rel="stylesheet" href="../assets/plugins/line-icons/line-icons.css">
+    <link rel="stylesheet" href="../assets/plugins/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../assets/plugins/parallax-slider/css/parallax-slider-rtl.css">
+    <link rel="stylesheet" href="../assets/plugins/owl-carousel2/assets/owl.carousel.css">
+
+    <!-- Style Switcher -->
+    <link rel="stylesheet" href="../assets/css/plugins/style-switcher.css">
+
+    <!-- CSS Theme -->
+    <link rel="stylesheet" href="../assets/css/css-rtl/theme-colors/default.css" id="style_color">
+    <link rel="stylesheet" href="../assets/css/css-rtl/theme-skins/dark.css">
+
+    <!-- RTL Customization -->
+    <link rel="stylesheet" href="../assets/css/css-rtl/rtl.css">
+
+    <!-- CSS Customization -->
+    <link rel="stylesheet" href="../assets/css/css-rtl/custom-rtl.css">
+
+    <!-- my css Customization -->
+    <link rel="stylesheet" href="../assets/css/myStyles/myStyles.css">
+
+    <script type="text/javascript">
+        // makes sure the whole site is loaded
+        jQuery(window).load(function () {
+            // will first fade out the loading animation
+            jQuery("#status").delay(1000).fadeOut();
+            // will fade out the whole DIV that covers the website.
+            jQuery("#preloader").delay(1000).fadeOut("slow");
+        })
+    </script>
+    <style type="text/css">
+
+        #preloader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: #ECF0F1;
+            z-index: 9999;
+            height: 100%;
+            width: 100%;
+        }
+
+        #status {
+            width: 920px;
+            height: 532px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin: -266px 0 0 -460px;
+            background: url(carregar.gif) center no-repeat;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<div id="preloader" style="z-index: 100000000000">
+    <div id="status"></div>
+</div>
+
+<!--=== Style Switcher ===-->
+<i class="style-switcher-btn fa fa-cogs hidden-xs"></i>
+<div class="style-switcher animated fadeInRight">
+    <div class="style-swticher-header">
+        <div class="style-switcher-heading">Style Switcher</div>
+        <div class="theme-close"><i class="icon-close"></i></div>
+    </div>
+
+    <div class="style-swticher-body">
+        <!-- Theme Colors -->
+        <div class="style-switcher-heading">Theme Colors</div>
+        <ul class="list-unstyled">
+            <li class="theme-default last theme-active" data-style="default" data-header="light"></li>
+            <li class="theme-blue" data-style="blue" data-header="light"></li>
+            <li class="theme-orange" data-style="orange" data-header="light"></li>
+            <li class="theme-red" data-style="red" data-header="light"></li>
+            <li class="theme-dark-red" data-style="dark-red" data-header="light"></li>
+            <li class="theme-teal" data-style="teal" data-header="light"></li>
+        </ul>
+
+        <!-- Theme Skins -->
+        <div class="style-switcher-heading">Theme Skins</div>
+        <div class="row no-col-space margin-bottom-20 skins-section">
+            <div class="col-xs-6">
+                <button data-skins="default"
+                        class="btn-u btn-u-xs btn-u-dark btn-block active-switcher-btn handle-skins-btn">Light
+                </button>
+            </div>
+            <div class="col-xs-6">
+                <button data-skins="dark" class="btn-u btn-u-xs btn-u-dark btn-block skins-btn">Dark</button>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- Layout Styles -->
+        <div class="style-switcher-heading">Layout Styles</div>
+        <div class="row no-col-space margin-bottom-20">
+            <div class="col-xs-6">
+                <a href="javascript:void(0);"
+                   class="btn-u btn-u-xs btn-u-dark btn-block active-switcher-btn wide-layout-btn">Wide</a>
+            </div>
+            <div class="col-xs-6">
+                <a href="javascript:void(0);" class="btn-u btn-u-xs btn-u-dark btn-block boxed-layout-btn">Boxed</a>
+            </div>
+        </div>
+        <hr>
+    </div>
+</div><!--/style-switcher-->
+<!--=== End Style Switcher ===-->
+
+
+<div class="wrapper">
+    <!--=== Header ===-->
+    <div class="header">
+        <div class="container">
+            <!-- Logo -->
+            <a class="logo" href="index.html">
+                <img src="../assets/img/msp2.png" alt="Logo">
+            </a>
+            <!-- End Logo -->
+
+            <!-- Topbar -->
+            <div class="topbar">
+                <ul class="loginbar pull-right">
+                    <li class="hoverSelector">
+                        <i class="fa fa-globe"></i>
+                        <a>اﻟﻠﻐﺎﺕ</a>
+                        <!-- <a>Languages</a> -->
+                        <ul class="languages hoverSelectorBlock">
+                            <li class="active">
+                                <a href="#">اﻟﻌﺮﺑﻴﺔ <i class="fa fa-check"></i></a>
+                            </li>
+                            <li><a href="#">English</a></li>
+                        </ul>
+                    </li>
+                    <li class="topbar-devider"></li>
+                    <!--
+                                        <li><a href="page_faq.html">Help</a></li>la
+                                        <li class="topbar-devider"></li>
+                    -->
+                    <!--<li><a href="page_login.html">Login</a></li>-->
+                    <li><a href="page_login.html">ﺗﺴﺠﻴﻞ اﻟﺪﺧﻮﻝ</a></li>
+                </ul>
+            </div>
+            <!-- End Topbar -->
+
+            <!-- Toggle get grouped for better mobile display -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target=".navbar-responsive-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="fa fa-bars"></span>
+            </button>
+            <!-- End Toggle -->
+        </div><!--/end container-->
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse mega-menu navbar-responsive-collapse">
+            <div class="container">
+                <ul class="nav navbar-nav">
+                    <!-- Home -->
+                    <li>
+                        <a class="navItem" href="index.html" style="font-family: PF DIN Text Arabic; font-size: 23px;">
+                            اﻟﺮﺋﻴﺴﻴﺔ
+                        </a>
+                    </li>
+                    <!-- End Home -->
+                    <!-- Pages -->
+                    <li>
+                        <a class="navItem" href="page_about1.html"
+                           style="font-family: PF DIN Text Arabic; font-size: 23px;">
+                            ﻋﻦ اﻟﻜﻠﻴﺔ
+                        </a>
+
+                    </li>
+                    <!-- End Pages -->
+
+                    <!-- Blog -->
+                    <li class="dropdown">
+                        <a id="nsvItem1" href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown"
+                           style="font-family: PF DIN Text Arabic; font-size: 23px;">
+                            اﻟﺒﺮاﻣﺞ اﻻﻛﺎﺩﻳﻤﻴﺔ
+                        </a>
+                        <ul class="dropdown-menu">
+
+                            <li><a href="table.html"><strong>ﻣﺮﺣﻠﺔ اﻟﺒﻜﺎﻟﺮﻳﻮﺱ</strong></a></li>
+                            <li><a href="#"><strong>ﻣﺮﺣﻠﺔ اﻟﺪﺭاﺳﺎﺕ اﻟﻌﻠﻴﺎ</strong></a></li>
+                            <li><a href="#"><strong>ﻣﺮﺣﻠﺔ اﻟﻤﺎﺟﺴﺘﻴﺮ</strong></a></li>
+                            <li><a href="#"><strong>ﻣﺮﺣﻠﺔ اﻟﺪﻛﺘﻮﺭاﻩ</strong></a></li>
+                        </ul>
+                    </li>
+                    <!-- End Blog -->
+
+                    <!-- Portfolio -->
+                    <li>
+                        <a class="navItem" href="news.html" style="font-family: PF DIN Text Arabic; font-size: 23px;">
+                            اﻷﺧﺒﺎﺭ
+                        </a>
+                    </li>
+                    <!-- End Portfolio -->
+
+                    <!-- Features -->
+                    <li class="dropdown">
+                        <a class="navItem2" href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown"
+                           style="font-family: PF DIN Text Arabic; font-size: 23px;">
+                            اﻟﺘﺨﺼﺼﺎﺕ
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="cs.html"><strong>ﻋﻠﻮﻡ اﻟﺤﺎﺳﺐ </strong></a></li>
+                            <li><a href="it.html"><strong>ﺗﻜﻨﻮﻟﻮﺟﻴﺎ اﻟﻤﻌﻠﻮﻣﺎﺕ</strong></a></li>
+                            <li><a href="is.html"><strong>ﻧﻈﻢ اﻟﻤﻌﻠﻮﻣﺎﺕ</strong></a></li>
+                            <li><a href="or.html"><strong>ﺑﺤﻮﺙ اﻟﻌﻤﻠﻴﺎﺕ </strong></a></li>
+                        </ul>
+                    </li>
+                    <!-- End Features -->
+
+                    <!-- Shortcodes -->
+                    <li class="dropdown">
+                        <a id="navItem3" href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown"
+                           style="font-family: PF DIN Text Arabic; font-size: 23px;">
+                            اﻷﻧﺸﻄﺔ
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="sport.html"><strong>اﻟﻨﺸﺎﻁ اﻟﺮﻳﺎﺿﻰ </strong></a></li>
+                            <li><a href="art.html"><strong>اﻟﻨﺸﺎﻁ اﻟﻔﻨﻰ</strong></a></li>
+                            <li><a href="cultural.html"><strong>اﻟﻨﺸﺎﻁ اﻟﺜﻘﺎﻓﻰ</strong></a></li>
+                            <li><a href="science.html"><strong>اﻟﺸﺎﻁ اﻟﻌﻠﻤﻰ ﻭ اﻟﺘﻜﻨﻮﻟﻮﺟﻰ </strong></a></li>
+                            <li><a href="social.html"><strong>اﻟﻨﺸﺎﻁ اﻹﺟﺘﻤﺎﻋﻰ</strong></a></li>
+                            <li><a href="gwala.html"><strong>اﻟﺠﻮاﻟﺔ ﻭ اﻟﺨﺪﻣﺔ اﻟﻌﺎﻣﺔ</strong></a></li>
+                            <li><a href="jurney.html"><strong>اﻷﺳﺮ ﻭ اﻟﺮﺣﻼﺕ</strong></a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Search Block -->
+                    <li>
+                        <i class="search fa fa-search search-btn"></i>
+                        <div class="search-open">
+                            <div class="input-group animated fadeInDown">
+                                <input type="text" class="form-control" placeholder="Search">
+                                        <span class="input-group-btn">
+                                            <button class="btn-u" type="button">Go</button>
+                                        </span>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- End Search Block -->
+                </ul>
+            </div><!--/end container-->
+        </div><!--/navbar-collapse-->
+    </div>
+    <!--=== End Header ===-->
+
+    <!--=== Slider ===-->
+    <div class="slider-inner">
+        <div id="da-slider" class="da-slider">
+            <div class="da-slide">
+                <h2><i>ﺑﺪاﻳﺔ اﻟﺘﺮﻡ اﻟﺜﺎﻧﻰ</i> <br/> <i>ﻣﻦ اﻟﻌﺎﻡ اﻟﺪﺭاﺳﻰ اﻟﺠﺪﻳﺪ</i> <br/> <i>ﻓﻰ ﻛﻠﻴﺔ اﻟﺤﺎﺳﺒﺎﺕ</i></h2>
+                <p><i>ﺗﺮﻡ ﺛﺎﻧﻰ ﺳﻌﻴﺪ</i> <br/> <i>ﺑﺪاﻳﺔ ﻓﻌﺎﻟﺔ ﻣﻦ اﻟﻄﻠﺒﺔ</i> <br/> <i> ﺑﺎﻟﻨﺠﺎﺡ ﻭ اﻟﺘﻮﻓﻴﻖ</i></p>
+                <!--<div class="da-img"><img class="img-responsive"  width="530" height="300" src="../assets/plugins/parallax-slider/img/fci.jpg" alt=""></div>-->
+                <div class="da-img"><img style="height: 280px" class="img-responsive" width="530" height="270"
+                                         src="../assets/img/main/news1.jpg" alt=""></div>
+            </div>
+            <div class="da-slide">
+                <h2><i>ﻓﻴﺪﻳﻮ ﻗﺼﻴﺮ ﻋﻦ اﻟﻜﻠﻴﺔ</i> <br/> <i>ﻧﺸﺄﺗﻬﺎ</i> <br/> <i>ﻭ ﺗﻔﺎﺻﻴﻞ ﻋﻨﻬﺎ</i></h2>
+                <div class="da-img">
+                    <!--<iframe width="530" height="300" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>-->
+                    <!--<iframe src="../assets/video/code_jame.mp4" width="530" height="300" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>-->
+                    <video controls="" width="530" height="300" poster="../assets/video/codeJame.png">
+                        <source src="../assets/video/code_jame.mp4">
+                    </video>
+                </div>
+            </div>
+            <div class="da-slide">
+                <h2><i> ﺗﺴﺘﻠﻢ اﻟﻜﻠﻴﺔ اﻟﻤﺒﻨﻰ اﻟﺠﺪﻳﺪ </i> <br/> <i>ﻣﻊ ﺑﺪاﻳﺔ اﻟﻌﺎﻡ </i> <br/> <i>اﻟﺪﺭاﺳﻰ اﻟﻘﺎﺩﻡ</i></h2>
+                <p><i>ﻣﺒﻨﻰ ﻋﻠﻰ اﻋﻠﻰ </i> <br/> <i>اﻟﻤﻮاﺻﻔﺎﺕ اﻟﻌﺎﻟﻤﻴﺔ</i> <br/> <i>ﺻﺮﺡ ﻋﻠﻤﻰ ﺟﺪﻳﺪ ﻓﻰ اﻟﺠﺎﻣﻌﺔ </i></p>
+                <div class="da-img"><img width="530" height="270" src="../assets/img/main/slider1.jpg" alt="image01"/>
+                </div>
+            </div>
+            <div class="da-arrows">
+                <span class="da-arrows-prev"></span>
+                <span class="da-arrows-next"></span>
+            </div>
+        </div>
+    </div><!--/slider-->
+    <!--=== End Slider ===-->
+
+    <!--=== Content Part ===-->
+    <div class="container content-sm">
+        <!-- Service Blocks -->
+        <div id="description" class="row margin-bottom-30">
+            <div class="col-md-4">
+                <div class="service">
+                    <i class="fa fa-university service-icon"></i>
+                    <div class="desc">
+                        <h4>ﻧﺸﺄﺓ اﻟﻜﻠﻴﺔ</h4>
+                        <!--
+                                                <p >ﻭاﻓﻖ ﻣﺠﻠﺲ ﺟﺎﻣﻌﺔ اﻟﻤﻨﻮﻓﻴﺔ ﺑﺘﺎﺭﻳﺦ 18/6/2000 ﻋﻠﻰ اﻧﺸﺎء ﻛﻠﻴﺔ اﻟﺤﺎﺳﺒﺎﺕ ﻭ اﻟﻤﻌﻠﻮﻣﺎﺕ ﻛﻤﺎ ﻭاﻓﻖ اﻟﻤﺠﻠﺲ اﻷﻋﻠﻰ ﻟﻠﺠﺎﻣﻌﺎﺕ ﻋﻠﻰ اﻧﺸﺎء اﻟﻜﻠﻴﺔ ﻭ اﻋﺘﻤﺎﺩ اﻻﺋﺤﺔ اﻟﺪاﺧﻠﻴﺔ ﻟﻬﺎ ﻭ ﻫﻰ ﺑﺬﻟﻚ ﻣﻦ اﻭﻟﻰ ﻛﻠﻴﺎﺕ اﻟﺤﺎﺳﺒﺎﺕ ﻭاﻟﻤﻌﻠﻮﻣﺎﺕ ﻓﻰ ﻣﺼﺮ ﻭ ﺻﺪﺭ اﻟﻘﺮاﺭ ﺑﺎﻧﺸﺎء اﻟﻜﻠﻴﺔ ﺑﻬﺪﻑ اﻟﻤﺴﺎﻫﻤﺔ اﻟﻔﻌﺎﻟﺔ ﻓﻰ ﺧﺪﻣﺔ اﻟﻤﺠﺘﻤﻊ ﻭ ﺇﺗﺎﺣﺔ اﻟﻔﺮﺻﺔ ﺃﻣﺎﻡ اﻟﺠﻤﻴﻊ ﻟﺘﻌﻠﻢ ﺗﻘﻨﻴﺎﺕ اﻟﺤﺎﺳﺒﺎﺕ ﻭ ﻧﻈﻢ اﻟﻤﻌﻠﻮﻣﺎﺕ </p>
+                        -->
+                        <p>
+                            ﺃﻧﺸﺌﺖ ﻛﻠﻴﺔ اﻟﺤﺎﺳﺒﺎﺕ ﻭاﻟﻤﻌﻠﻮﻣﺎﺕ ﺑﻤﻮﺟﺐ اﻟﻘﺮاﺭ اﻟﺠﻤﻬﻮﺭﻱ ﺭﻗﻢ (292) ﻟﺴﻨﺔ 2001 ﻭﺑﺪﺃﺕ اﻟﺪﺭاﺳﺔ ﺑﻬﺎ
+                            ﻓﻲ اﻟﻌﺎﻡ اﻟﺠﺎﻣﻌﻲ 2001/2002 ﻡ ﻭ ﺻﺪﺭ اﻟﻘﺮاﺭ ﺑﺎﻧﺸﺎء اﻟﻜﻠﻴﺔ ﺑﻬﺪﻑ اﻟﻤﺴﺎﻫﻤﺔ اﻟﻔﻌﺎﻟﺔ ﻓﻰ ﺧﺪﻣﺔ
+                            اﻟﻤﺠﺘﻤﻊ ﻭ ﺇﺗﺎﺣﺔ اﻟﻔﺮﺻﺔ ﺃﻣﺎﻡ اﻟﺠﻤﻴﻊ ﻟﺘﻌﻠﻢ ﺗﻘﻨﻴﺎﺕ اﻟﺤﺎﺳﺒﺎﺕ ﻭ ﻧﻈﻢ اﻟﻤﻌﻠﻮﻣﺎﺕ
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service">
+                    <i class="fa  fa-graduation-cap service-icon"></i>
+                    <div class="desc">
+                        <h4>ﺭﺅﻳﺔ اﻟﻜﻠﻴﺔ </h4>
+                        <p>ﺗﺴﻌﻰ ﻛﻠﻴﺔ اﻟﺤﺎﺳﺒﺎﺕ ﻭ اﻟﻤﻌﻠﻮﻣﺎﺕ ﺑﺠﺎﻣﻌﺔ اﻟﻤﻨﻮﻓﻴﺔ اﻟﻰ اﻟﺘﻤﻴﺰ اﻟﻌﻠﻤﻰ ﻭ اﻟﺒﺤﺜﻰ ﻓﻰ ﻣﺠﺎﻝ اﻟﺤﺎﺳﺒﺎﺕ ﻭ
+                            اﻟﻤﻌﻮﻣﺎﺕ ﻣﺤﻠﻴﺎ ﻭ اﻗﻠﻴﻤﻴﺎ</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service">
+                    <i class="fa fa-envelope-square service-icon"></i>
+                    <!--<i class="fa fa-rocket service-icon"></i>-->
+                    <div class="desc">
+                        <h4>ﺭﺳﺎﻟﺔ اﻟﻜﻠﻴﺔ</h4>
+                        <p>ﺗﻌﻤﻞ اﻟﻜﻠﻴﺔ ﻋﻠﻰ اﻋﺪاﺩ ﺧﺮﻳﺞ ﻣﺘﻤﻴﺰ ﻗﺎﺩﺭ ﻋﻠﻰ اﻟﻤﻨﺎﻓﺴﺔ ﻓﻰ ﺳﻮﻕ اﻟﻌﻤﻞ اﻟﻤﺤﻠﻰ ﻭ اﻷﻗﻠﻴﻤﻴﻰ ﻓﻰ ﻣﺠﺎﻻﺕ
+                            اﻟﺤﺎﺳﺒﺎﺕ ﻭ اﻟﻤﻌﻠﻮﻣﺎﺕ ﻣﻊ اﻹﺳﻬﺎﻡ ﻓﻰ ﺧﺪﻣﺔ اﻟﻤﺠﺘﻤﻊ اﻟﻤﺤﻠﻰ ﻭ ﺇﺛﺮاء اﻟﺒﺤﺚ اﻟﻌﻠﻤﻰ</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Service Blokcs -->
+
+        <!-- Recent Works -->
+
+        <div class="headline"><h2>ﺃﺧﺮ اﻻﺧﺒﺎﺭ </h2></div>
+        <div id="news" class="row margin-bottom-20">
+            <div class="col-md-3 col-sm-6">
+                <div class="thumbnails thumbnail-style thumbnail-kenburn">
+                    <div class="thumbnail-img">
+                        <div class="overflow-hidden">
+                            <img class="img-responsive" src="../assets/img/main/fci/drOsama.jpg" alt="">
+                        </div>
+                        <a class="btn-more hover-effect" href="news.html">اﻗﺮﺃ اﻟﻤﺰﻳﺪ +</a>
+                    </div>
+                    <div class="caption">
+                        <h3><a class="hover-effect" href="#">اﻟﺨﺒﺮ اﻷﻭﻝ</a></h3>
+                        <p>ﺩﻛﺘﻮﺭ ﺃﺳﺎﻣﺔ ﻋﺒﺪ اﻟﺮﺅﻭﻑ ﻳﻨﺎﻗﺶ اﻟﻄﻠﺒﺔ ﻓﻰ ﺑﻌﺾ اﻟﻤﺸﻜﻼﺕ اﻟﺘﻰ ﺗﻮاﺟﻬﻬﻢ ﺃﺛﻨﺎء اﻟﺪﺭاﺳﺔ ﺃﻭ
+                            اﻻﻣﺘﺤﺎﻧﺎﺕ</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="thumbnails thumbnail-style thumbnail-kenburn">
+                    <div class="thumbnail-img">
+                        <div class="overflow-hidden">
+                            <img class="img-responsive" src="../assets/img/main/fci/moltqa.jpg" alt="">
+                        </div>
+                        <a class="btn-more hover-effect" href="news.html">اﻗﺮﺃ اﻟﻤﺰﻳﺪ +</a>
+                    </div>
+                    <div class="caption">
+                        <h3><a class="hover-effect" href="#">اﻟﺨﺒﺮ اﻟﺜﺎﻧﻰ</a></h3>
+                        <p>ﺭﺋﻴﺲ اﻟﺠﺎﻣﻌﺔ ﻭ اﻋﻀﺎء ﻣﺠﻠﺲ اﻟﻜﻠﻴﺔ ﻳﻮﺯﻋﻮﻥ اﻟﺠﻮاﺋﺰ ﻋﻠﻰ اﻟﻔﺎﺋﺰﻳﻦ ﻓﻰ اﻟﻤﺴﺎﺑﻘﺎﺕ اﻟﻤﻘﺎﻣﺔ ﻋﻠﻰ ﻫﺎﻣﺶ
+                            ﻣﻠﺘﻘﻰ ﺣﺎﺳﺒﺎﺕ ﻣﺼﺮ</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="thumbnails thumbnail-style thumbnail-kenburn">
+                    <div class="thumbnail-img">
+                        <div class="overflow-hidden">
+                            <img class="img-responsive" src="../assets/img/main/fci/moltqa1.jpg" alt="">
+                        </div>
+                        <a class="btn-more hover-effect" href="news.html">اﻗﺮﺃ اﻟﻤﺰﻳﺪ +</a>
+                    </div>
+                    <div class="caption">
+                        <h3><a class="hover-effect" href="#">اﻟﺨﺒﺮ اﻟﺜﺎﻟﺚ </a></h3>
+                        <p> ﺩﻛﺘﻮﺭ ﺃﺳﺎﻣﺔ ﻋﺒﺪ اﻟﺮﺅﻭﻑ ﻳﻘﺎﺑﻞ اﻟﻄﻠﺒﺔ ﻣﻦ ﺟﻤﻴﻊ ﻛﻠﻴﺎﺕ اﻟﺤﺎﺳﺒﺎﺕ ﻓﻰ ﻣﻠﺘﻘﻰ ﺣﺎﺳﺒﺎﺕ ﻣﺼﺮ اﻟﺘﻰ ﺗﺴﺘﻀﻴﻔﻪ
+                            اﻟﺠﺎﻣﻌﺔ </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="thumbnails thumbnail-style thumbnail-kenburn">
+                    <div class="thumbnail-img">
+                        <div class="overflow-hidden">
+                            <img class="img-responsive" src="../assets/img/main/fci/build.jpg" alt="">
+                        </div>
+                        <a class="btn-more hover-effect" href="news.html">اﻗﺮﺃ اﻟﻤﺰﻳﺪ +</a>
+                    </div>
+                    <div class="caption">
+                        <h3><a class="hover-effect" href="#">اﻟﺨﺒﺮ اﻟﺮاﺑﻊ</a></h3>
+                        <p>ﺗﺴﺘﻠﻢ ﻛﻠﻴﺔ اﻟﺤﺎﺳﺒﺎﺕ ﻭ اﻟﻤﻌﻠﻮﻣﺎﺕ اﻟﻤﺒﻨﻰ اﻟﺠﺪﻳﺪ ﻟﻬﺎ ﻣﻊ ﺑﺪاﻳﺔ اﻟﻌﺎﻡ اﻟﺪﺭاﺳﻰ اﻟﻘﺎﺩﻡ </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Recent Works -->
+
+        <!-- Info Blokcs -->
+        <div class="row margin-bottom-30">
+            <!-- Welcome Block -->
+            <div id="info" class="col-md-8 md-margin-bottom-40">
+                <div class="headline"><h2>اﻫﻼ ﺑﻚ ﻓﻰ اﻟﻜﻠﻴﺔ</h2></div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <img class="img-responsive margin-bottom-20" src="../assets/img/main/fci/build.jpg" alt="">
+                    </div>
+                    <div class="col-sm-8" style="font-size: 17px;">
+                        <p>ﻭاﻓﻖ ﻣﺠﻠﺲ ﺟﺎﻣﻌﺔ اﻟﻤﻨﻮﻓﻴﺔ ﺑﺘﺎﺭﻳﺦ 18/6/2000 ﻋﻠﻰ اﻧﺸﺎء ﻛﻠﻴﺔ اﻟﺤﺎﺳﺒﺎﺕ ﻭ اﻟﻤﻌﻠﻮﻣﺎﺕ ﻛﻤﺎ ﻭاﻓﻖ اﻟﻤﺠﻠﺲ
+                            اﻷﻋﻠﻰ ﻟﻠﺠﺎﻣﻌﺎﺕ ﻋﻠﻰ اﻧﺸﺎء اﻟﻜﻠﻴﺔ ﻭ اﻋﺘﻤﺎﺩ اﻻﺋﺤﺔ اﻟﺪاﺧﻠﻴﺔ ﻟﻬﺎ ﻭ ﻫﻰ ﺑﺬﻟﻚ ﻣﻦ اﻭﻟﻰ ﻛﻠﻴﺎﺕ اﻟﺤﺎﺳﺒﺎﺕ
+                            ﻭاﻟﻤﻌﻠﻮﻣﺎﺕ ﻓﻰ ﻣﺼﺮ ﻭ ﺗﻀﻢ اﻻﻗﺴﺎﻡ ﻛﺎﻟﺘﺎﻟﻰ : </p>
+                        <ul class="list-unstyled margin-bottom-20">
+                            <li><i class="fa fa-check color-green"></i> ﻗﺴﻢ ﻋﻠﻮﻡ اﻟﺤﺎﺳﺐ</li>
+                            <li><i class="fa fa-check color-green"></i> ﻗﺴﻢ ﺗﻜﻨﻮﻟﻮﺟﻴﺎ اﻟﻤﻌﻠﻮﻣﺎﺕ</li>
+                            <li><i class="fa fa-check color-green"></i> ﻗﺴﻢ ﻧﻈﻢ اﻟﻤﻌﻠﻮﻣﺎﺕ</li>
+                            <li><i class="fa fa-check color-green"></i> ﻗﺴﻢ ﺑﺤﻮﺙ اﻟﻌﻤﻠﻴﺎﺕ ﻭ ﺩﻋﻢ اﺗﺨﺎﺫ اﻟﻘﺮاﺭ</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <blockquote class="hero-unify" style="font-size: 17px;">
+                    <p>" ﻟﻘﺪ ﻛﺎﻥ ﺣﻠﻤﺎ اﻥ ﺗﻜﻮﻥ ﺑﺠﺎﻣﻌﺔ اﻟﻤﻨﻮﻓﻴﺔ ﻛﻠﻴﺔ اﻟﺤﺎﺳﺒﺎﺕ ﻭ اﻟﻤﻌﻠﻮﻣﺎﺕ ﻭ ﺗﺤﻘﻖ ﺑﻔﻀﻞ اﻟﻠﻪ ﻭ ﺑﻔﻀﻞ اﻟﻌﻠﻤﺎء
+                        ﻭ اﻷﺳﺎﺗﺬﺓ اﻷﻓﺎﺿﻞ اﻟﺬﻳﻦ ﻗﺎﺩﻭا ﻫﺬﻩ اﻟﺠﺎﻣﻌﺔ ﺑﻜﻞ اﺧﻼﺹ ﺣﺘﻰ اﺻﺒﺢ ﺣﻠﻤﻨﺎ ﺣﻘﻴﻘﺔ ﻭاﻗﻌﺔ ﺑﻌﺪ ﺗﺨﺮﺝ ﻋﺪﺓ ﺩﻓﻌﺎﺕ
+                        ﻣﻦ اﻟﻜﻠﻴﺔ ﺣﺘﻰ اﻵﻥ اﻧﺘﺸﺮﻭا ﻓﻰ اﻟﻌﻤﻞ ﺑﻤﺨﺘﻠﻒ اﻟﺸﺮﻛﺎﺕ ﻭ اﻟﻤﺼﺎﻧﻊ"</p>
+                </blockquote>
+            </div><!--/col-md-8-->
+
+            <!-- Latest Shots -->
+            <div id="latestShot" class="col-md-4">
+                <div class="headline"><h2>ﺃﺧﺮ اﻟﻠﻘﻄﺎﺕ</h2></div>
+                <div id="myCarousel" class="carousel slide carousel-v1">
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img src="../assets/img/main/fci/grade.jpg" alt="">
+                            <div class="carousel-caption">
+                                <p>اﻟﻜﻠﻴﺔ ﺗﺤﺘﻔﻞ ﺑﺘﺨﺮﻳﺞ ﺩﻓﻌﺔ ﺟﺪﻳﺪﺓ ﻣﻦ اﻟﺨﺮﻳﺠﻴﻦ ﻟﺴﻨﺔ 2016 ﺑﺤﻀﻮﺭ ﺭﺋﻴﺲ اﻟﺠﺎﻣﻌﺔ.</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="../assets/img/main/fci/build.jpg" alt="">
+                            <div class="carousel-caption">
+                                <p>ﺣﺎﺳﺒﺎﺕ اﻟﻤﻨﻮﻓﻴﺔ ﺗﺴﺘﻀﻴﻒ ﻣﻠﺘﻘﻰ ﺣﺎﺳﺒﺎﺕ ﻣﺼﺮ ﺑﺤﻀﻮﺭ ﺭﺅﺳﺎء اﻟﺠﺎﻣﻌﺎﺕ.</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="../assets/img/main/fci/moltqa1.jpg" alt="">
+                            <div class="carousel-caption">
+                                <p>ﺩﻛﺘﻮﺭ ﺃﺳﺎﻣﺔ ﻋﺒﺪاﻟﺮﺅﻭﻑ ﻳﻠﺘﻘﻰ ﺑﻄﻠﺒﺔ ﺣﺎﺳﺒﺎﺕ ﻣﺼﺮ ﻓﻰ ﺟﺎﻣﻌﺔ اﻟﻤﻨﻮﻓﻴﺔ</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="../assets/img/main/fci/moltqa.jpg" alt="">
+                            <div class="carousel-caption">
+                                <p>ﺭﺋﻴﺲ اﻟﺠﺎﻣﻌﺔ ﻳﻜﺮﻡ ﻃﻼﺏ ﻛﻠﻴﺔ اﻟﺤﺎﺳﺒﺎﺕ اﻟﻔﺎﺋﺰﻳﻦ ﻓﻰ اﻟﻨﺸﺎﻁ اﻟﺠﺎﻣﻌﻰ</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-arrow">
+                        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                            <i class="fa fa-angle-left"></i>
+                        </a>
+                        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                            <i class="fa fa-angle-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div><!--/col-md-4-->
+        </div>
+        <!-- End Info Blokcs -->
+
+        <!-- Owl Clients v1 -->
+
+        <!-- End Owl Clients v1 -->
+    </div><!--/container-->
+    <!-- End Content Part -->
+
+    <!--=== Footer Version 1 ===-->
+    <div class="footer-v1">
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <!-- About -->
+                    <div class="col-md-3 md-margin-bottom-40">
+                        <!--                        <a href="index.html"><img id="logo-footer" class="footer-logo" src="../assets/img/logo2-default.png" alt=""></a> -->
+                        <a href="index.html"><img id="logo-footer" class="footer-logo" src="../assets/img/msp2.png"
+                                                  alt=""></a>
+                        <p style="font-size:16px;font-family:alHor;">
+                            &ldquo;ﻟﻘﺪ ﻛﺎﻥ ﺣﻠﻤﺎ اﻥ ﺗﻜﻮﻥ ﺑﺠﺎﻣﻌﺔ اﻟﻤﻨﻮﻓﻴﺔ ﻛﻠﻴﺔ اﻟﺤﺎﺳﺒﺎﺕ ﻭ اﻟﻤﻌﻠﻮﻣﺎﺕ ﻭ ﺗﺤﻘﻖ ﺑﻔﻀﻞ اﻟﻠﻪ ﻭ
+                            ﺑﻔﻀﻞ اﻟﻌﻠﻤﺎء ﻭ اﻷﺳﺎﺗﺬﺓ اﻷﻓﺎﺿﻞ اﻟﺬﻳﻦ ﻗﺎﺩﻭا ﻫﺬﻩ اﻟﺠﺎﻣﻌﺔ ﺑﻜﻞ اﺧﻼﺹ ﺣﺘﻰ اﺻﺒﺢ ﺣﻠﻤﻨﺎ ﺣﻘﻴﻘﺔ ﻭاﻗﻌﺔ
+                            ﺑﻌﺪ ﺗﺨﺮﺝ ﻋﺪﺓ ﺩﻓﻌﺎﺕ ﻣﻦ اﻟﻜﻠﻴﺔ ﺣﺘﻰ اﻵﻥ اﻧﺘﺸﺮﻭا ﻓﻰ اﻟﻌﻤﻞ ﺑﻤﺨﺘﻠﻒ اﻟﺸﺮﻛﺎﺕ ﻭ اﻟﻤﺼﺎﻧﻊ&ldquo;
+                        </p>
+                    </div><!--/col-md-3-->
+                    <!-- End About -->
+
+                    <!-- Latest -->
+                    <div class="col-md-3 md-margin-bottom-40">
+                        <div class="posts">
+                            <div class="headline"><h2>ﺃﺧﺮ اﻹﺿﺎﻓﺎﺕ</h2></div>
+                            <ul class="list-unstyled latest-list">
+                                <li>
+                                    <a href="news.html">اﻻﺧﺒﺎﺭ</a>
+                                    <small>May 8, 2016</small>
+                                </li>
+                                <li>
+                                    <a href="#latestShot">اﺧﺮ اﻟﻠﻘﻄﺎﺕ</a>
+                                    <small>June 23, 2016</small>
+                                </li>
+                                <li>
+                                    <a href="news.html">اﻟﻨﺪﻭاﺕ</a>
+                                    <small>September 15, 2016</small>
+                                </li>
+                            </ul>
+                        </div>
+                    </div><!--/col-md-3-->
+                    <!-- End Latest -->
+
+                    <!-- Link List -->
+                    <div class="col-md-3 md-margin-bottom-40">
+                        <div class="headline"><h2>ﺭﻭاﺑﻂ ﻣﻬﻤﺔ</h2></div>
+                        <ul class="list-unstyled link-list">
+                            <li><a href="index.html">اﻟﺮﺋﻴﺴﻴﺔ</a><i class="fa fa-angle-right"></i></li>
+                            <li><a href="page_about1.html">ﻋﻦ اﻟﻜﻠﻴﺔ</a><i class="fa fa-angle-right"></i></li>
+                            <li><a href="page_about1.html">اﻟﺘﻘﺪﻳﻢ ﻭ اﻟﻘﺒﻮﻝ</a><i class="fa fa-angle-right"></i></li>
+                            <li><a href="#">اﻷﺑﺤﺎﺙ اﻟﻌﻠﻤﻴﺔ</a><i class="fa fa-angle-right"></i></li>
+                        </ul>
+                    </div><!--/col-md-3-->
+                    <!-- End Link List -->
+
+                    <!-- Address -->
+                    <div class="col-md-3 map-img md-margin-bottom-40">
+                        <div class="headline"><h2>اﺗﺼﻞ ﺑﻨﺎ </h2></div>
+                        <address class="md-margin-bottom-40">
+                            25 ﺷﺎﺭﻉ ﺟﻤﺎﻝ ﻋﺒﺪاﻟﻨﺎﺻﺮ <br/>
+                            ﺷﺒﻴﻦ اﻟﻜﻮﻡ , اﻟﻤﻨﻮﻓﻴﺔ <br/>
+                            048/2225446 :ﺗﻠﻴﻔﻮﻥ<br/>
+                            048/2223694 :ﻓﺎﻛﺲ <br/>
+                            اﻳﻤﻴﻞ: <a href="mailto:compu_info@menofia.edu.eg" class="">info@fci.com</a>
+                        </address>
+                    </div><!--/col-md-3-->
+                    <!-- End Address -->
+                </div>
+            </div>
+        </div>
+
+        <!--/footer-->
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>
+                            ﺟﻤﻴﻊ اﻟﺤﻘﻮﻕ ﻣﺤﻔﻮﻇﺔ &copy; 2016
+
+                            <!--<a href="#">ﺟﻤﻴﻊ اﻟﺤﻘﻮﻕ ﻣﺤﻔﻮﻇﺔ &copy; </a>-->
+                            &nbsp; | <a href="#">&nbsp;ﺳﻴﺎﺳﺎﺕ اﻻﺳﺘﺨﺪاﻡ&nbsp;</a> &nbsp;| &nbsp; ﺑﻮاﺳﻄﺔ&nbsp;&nbsp; <a
+                                href="about_team.html">ﻓﺮﻳﻖ اﻟﻌﻤﻞ</a>
+
+                        </p>
+                    </div>
+
+                    <!-- Social Links -->
+                    <div class="col-md-6">
+                        <ul class="footer-socials list-inline">
+                            <li>
+                                <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title=""
+                                   data-original-title="Facebook">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title=""
+                                   data-original-title="Google Plus">
+                                    <i class="fa fa-google-plus"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title=""
+                                   data-original-title="Linkedin">
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title=""
+                                   data-original-title="Twitter">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title=""
+                                   data-original-title="youtube">
+                                    <i class="fa fa-youtube"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- End Social Links -->
+                </div>
+            </div>
+        </div><!--/copyright-->
+    </div>
+    <!--=== End Footer Version 1 ===-->
+</div><!--/wrapper-->
+
+<!-- JS Implementing Plugins -->
+<script src="../assets/plugins/back-to-top.js"></script>
+<script src="../assets/plugins/smoothScroll.js"></script>
+<script src="../assets/plugins/parallax-slider/js/modernizr.js"></script>
+<script src="../assets/plugins/parallax-slider/js/jquery.cslider.js"></script>
+<script src="../assets/plugins/owl-carousel2/owl.carousel.min.js"></script>
+<!-- JS Customization -->
+<script src="../assets/js/custom.js"></script>
+<!-- JS Page Level -->
+<script src="../assets/js/app.js"></script>
+<script src="../assets/js/plugins/owl-carousel-rtl.js"></script>
+<script src="../assets/js/plugins/style-switcher-rtl.js"></script>
+<script src="../assets/js/plugins/parallax-slider.js"></script>
+<script>
+    jQuery(document).ready(function () {
+        App.init();
+        OwlCarousel.initOwlCarousel();
+        StyleSwitcher.initStyleSwitcher();
+        ParallaxSlider.initParallaxSlider();
+    });
+</script>
+<!--[if lt IE 9]>
+<script src="../assets/plugins/respond.js"></script>
+<script src="../assets/plugins/html5shiv.js"></script>
+<script src="../assets/plugins/placeholder-IE-fixes.js"></script>
+<![endif]-->
+
+</body>
+
+<!-- Cloned by RabinsXP.com-->
+</html>
